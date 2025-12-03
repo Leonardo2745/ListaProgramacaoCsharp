@@ -1,7 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 Console.WriteLine("Digite 5 números:" + "\n");
-int[] vetor = new int[10];
+int[] vetor = new int[5];
+
 
 for (int i = 0; i < vetor.Length; i++)
 {
