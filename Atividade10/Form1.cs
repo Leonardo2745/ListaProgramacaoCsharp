@@ -20,7 +20,7 @@ namespace Atividade10
         private void Form1_Load(object sender, EventArgs e)
         {
            
-            positionMatriz.Text = "[0][0]:";
+            positionMatriz.Text = "[0][0]: ";
             matrizLabel.Text = ""; 
         }
 
