@@ -9,13 +9,13 @@ namespace Atividade11
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            // Lê os valores digitados no TextBox
+        
             string entrada = txtValores.Text;
 
-            // Quebra os valores por espaço, vírgula ou quebra de linha
+           
             string[] valores = entrada.Split(new char[] { ' ', ',', ';', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
 
-            // Verifica se o usuário digitou 12 valores (4x3)
+         
             if (valores.Length != 12)
             {
                 MessageBox.Show("Digite exatamente 12 números!");
@@ -25,7 +25,6 @@ namespace Atividade11
             int[,] matriz = new int[4, 3];
             int index = 0;
 
-            // Preenche a matriz com os números digitados
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < 3; j++)
@@ -37,7 +36,7 @@ namespace Atividade11
 
             int positivos = 0, negativos = 0, zeros = 0;
 
-            // Conta números da matriz
+           
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < 3; j++)
@@ -48,7 +47,7 @@ namespace Atividade11
                 }
             }
 
-            // Exibe o resultado
+            
             lblPositivos.Text = $"Positivos: {positivos}";
             lblNegativos.Text = $"Negativos: {negativos}";
             lblZeros.Text = $"Zeros: {zeros}";
