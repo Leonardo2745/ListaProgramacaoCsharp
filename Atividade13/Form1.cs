@@ -13,17 +13,17 @@ namespace Atividade13
         }
         private void btnGerar_Click(object sender, EventArgs e)
         {
-            // Lê e separa os valores digitados
+           
             string[] entrada = txtValores.Text.Split(' ', ',', ';');
 
-            // Verifica se tem valores suficientes
+            
             if (entrada.Length < 6)
             {
                 MessageBox.Show("Digite 6 valores para preencher a matriz 2x3.");
                 return;
             }
 
-            // Cria matriz 2x3
+            
             int[,] matriz = new int[2, 3];
             int index = 0;
 
@@ -36,14 +36,14 @@ namespace Atividade13
                 }
             }
 
-            // Cria matriz transposta 3x2
+           
             int[,] transposta = new int[3, 2];
 
             for (int i = 0; i < 2; i++)
                 for (int j = 0; j < 3; j++)
                     transposta[j, i] = matriz[i, j];
 
-            // Exibe matriz original
+          
             listaOriginal.Items.Clear();
             for (int i = 0; i < 2; i++)
             {
@@ -54,7 +54,7 @@ namespace Atividade13
                 listaOriginal.Items.Add(linha);
             }
 
-            // Exibe matriz transposta
+          
             listaTransposta.Items.Clear();
             for (int i = 0; i < 3; i++)
             {
