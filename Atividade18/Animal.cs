@@ -12,7 +12,7 @@ namespace Atividade18
 
         public virtual string EmitirSom()
         {
-            return "";
+            return "Som desconhecido";
         }
     }
 }

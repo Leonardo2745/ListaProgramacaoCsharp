@@ -28,38 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtNome = new TextBox();
-            btnCachorro = new Button();
-            btnGato = new Button();
+            btnExecutar = new Button();
             lblSaida = new Label();
             SuspendLayout();
             // 
-            // txtNome
+            // btnExecutar
             // 
-            txtNome.Location = new Point(340, 66);
-            txtNome.Name = "txtNome";
-            txtNome.Size = new Size(100, 23);
-            txtNome.TabIndex = 0;
-            // 
-            // btnCachorro
-            // 
-            btnCachorro.Location = new Point(352, 104);
-            btnCachorro.Name = "btnCachorro";
-            btnCachorro.Size = new Size(75, 23);
-            btnCachorro.TabIndex = 1;
-            btnCachorro.Text = "Cachorro";
-            btnCachorro.UseVisualStyleBackColor = true;
-            btnCachorro.Click += btnCachorro_Click;
-            // 
-            // btnGato
-            // 
-            btnGato.Location = new Point(352, 143);
-            btnGato.Name = "btnGato";
-            btnGato.Size = new Size(75, 23);
-            btnGato.TabIndex = 2;
-            btnGato.Text = "Gato";
-            btnGato.UseVisualStyleBackColor = true;
-            btnGato.Click += btnGato_Click;
+            btnExecutar.Location = new Point(352, 143);
+            btnExecutar.Name = "btnExecutar";
+            btnExecutar.Size = new Size(75, 23);
+            btnExecutar.TabIndex = 2;
+            btnExecutar.Text = "Executar";
+            btnExecutar.UseVisualStyleBackColor = true;
+            btnExecutar.Click += btnExecutar_Click;
             // 
             // lblSaida
             // 
@@ -76,9 +57,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(lblSaida);
-            Controls.Add(btnGato);
-            Controls.Add(btnCachorro);
-            Controls.Add(txtNome);
+            Controls.Add(btnExecutar);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -90,7 +69,7 @@
 
         private TextBox txtNome;
         private Button btnCachorro;
-        private Button btnGato;
+        private Button btnExecutar;
         private Label lblSaida;
     }
 }

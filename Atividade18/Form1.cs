@@ -11,21 +11,26 @@ namespace Atividade18
         {
 
         }
-        private void btnCachorro_Click(object sender, EventArgs e)
+        private void btnExecutar_Click(object sender, EventArgs e)
         {
-            Cachorro dog = new Cachorro();
-            dog.Nome = txtNome.Text;
+            // Vetor de Animal com polimorfismo
+            Animal[] animais = new Animal[3];
 
-            lblSaida.Text = $"{dog.Nome}: {dog.EmitirSom()}";
+            animais[0] = new Cachorro() { Nome = "Pablo" };
+            animais[1] = new Gato() { Nome = "Natan" };
+            animais[2] = new Cachorro() { Nome = "Kauan" };
+
+            // String que vai acumular o resultado
+            string resultado = "";
+
+            foreach (Animal a in animais)
+            {
+                resultado += $"{a.Nome}: {a.EmitirSom()}\n";
+            }
+
+            lblSaida.Text = resultado;
         }
 
-        private void btnGato_Click(object sender, EventArgs e)
-        {
-            Gato cat = new Gato();
-            cat.Nome = txtNome.Text;
-
-            lblSaida.Text = $"{cat.Nome}: {cat.EmitirSom()}";
-        }
 
 
     }
